@@ -3,6 +3,7 @@ import cors from "cors";
 import route from "./routes/route.js";
 import "./model/index.js"; // <- PENTING: memicu sinkronisasi DB
 import cookieParser from "cookie-parser";
+import "dotenv/config";
 
 const app = express();
 const port = process.env.PORT || 5000;
