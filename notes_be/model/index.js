@@ -12,7 +12,7 @@ Notes.belongsTo(Users, { foreignKey: "userId" });
     await db.authenticate();
     console.log("Koneksi database berhasil!");
 
-    await db.sync({ alter: true });
+    await db.sync();
     console.log("Semua tabel berhasil disinkronisasi.");
   } catch (err) {
     console.error("Gagal konek DB:", err);
